@@ -1,0 +1,6 @@
+{
+  "name": "VendorBridge",
+  "description": "Procurement & Vendor Management ERP digitized to optimize RfQs, quotations, manager approvals, Purchase Orders, and Invoices with AI-powered analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
