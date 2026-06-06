@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    url: jdbc:tc:postgresql:16-alpine:///vendorbridge_test
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+  
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  flyway:
+    enabled: true
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+vendorbridge:
+  jwt:
+    secret: "TestSecretKeyThatIsLongEnoughForHmacSha256AlgorithmToWorkProperly"
+    access-token-expiry: 900000
+    refresh-token-expiry: 604800000
+
+minio:
+  endpoint: http://localhost:9000
+  access-key: testuser
+  secret-key: testpass123
+  bucket-name: testbucket
