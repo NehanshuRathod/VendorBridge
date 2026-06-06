@@ -1,0 +1,23 @@
+# Java build artifacts
+/backend/target/
+
+# Node.js dependencies and build outputs
+/frontend/node_modules/
+/frontend/dist/
+
+# IDE/editor files
+*.log
+*.tmp
+*.swp
+.vscode/
+.idea/
+
+# Environment files
+*.env
+*.env.*
+
+# macOS files
+.DS_Store
+
+# OS generated files
+Thumbs.db
